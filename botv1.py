@@ -191,6 +191,9 @@ for _d in (DATA_DIR, COMBO_DIR, RESULTS_DIR, PROXY_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
 CONFIG_FILE    = DATA_DIR / "config.json"
+print("DATA_DIR:", DATA_DIR)
+print("CONFIG_FILE:", CONFIG_FILE)
+print("EXISTS:", CONFIG_FILE.exists())
 USERS_FILE     = DATA_DIR / "users.json"
 KEYS_FILE      = DATA_DIR / "keys.json"
 SESSIONS_FILE  = DATA_DIR / "sessions_persist.json"   # crash-resume state
